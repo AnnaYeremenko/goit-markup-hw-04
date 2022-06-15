@@ -361,9 +361,11 @@ display: flex;
     background: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
+    
 }
 .container-footer {
     display: flex;
+    align-items: baseline;
 }
 .footer-logo {
     font-family: 'Raleway';
@@ -410,8 +412,9 @@ display: flex;
     margin-bottom: 9px;
 }
 .join {
-    align-items: center;
+    align-items: baseline;
     margin-left: 70px;
+
     
 }
 .join-title {
