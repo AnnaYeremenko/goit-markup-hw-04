@@ -350,11 +350,15 @@ display: flex;
 }
 .client-link:hover {
     border: 1px solid var(--link-text-color);
+    color: var(--link-text-color);
 }
 .client-logo {
     width: 106px;
     height: 60px;
-    fill: #afb1b8;
+    fill: currentColor;
+}
+.client-logo:hover {
+    fill: var(--link-text-color);
 }
 
  /*-----------FOOTER-----------*/
@@ -414,9 +418,7 @@ display: flex;
 }
 .join {
     align-items: baseline;
-    margin-left: 70px;
-
-    
+    margin-left: 70px;    
 }
 .join-title {
     margin-bottom: 20px;
@@ -451,7 +453,7 @@ display: flex;
 .social-icon {
     width: 20px;
     height: 20px;
-    fill: #FFFFFF;
+    fill: currentColor;
 }
  /*-----------Main-Portfolio-----------*/
  .filter-list {
