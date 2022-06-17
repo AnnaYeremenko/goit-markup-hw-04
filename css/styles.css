@@ -51,7 +51,6 @@ img {
 }
 /*сетка на флексах*/
 .card-set {
-    --item: 6;
     display: flex;
     flex-wrap: wrap;
     margin: calc(-1 * var(--indent)/2);    
@@ -258,9 +257,7 @@ display: flex;
     letter-spacing: 0.03em;
     color: var(--text-color);
 }
-.card-set-item {
-    list-style: none;
-}
+
 /*Наша команда*/
 .main-team {
     background-color: #F5F4FA;
@@ -318,6 +315,7 @@ display: flex;
     align-items: center;
     width: 44px;
     height: 44px;
+    color: #AFB1B8;
     background-color: #FFFFFF;
     border-radius: 50%;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -337,13 +335,16 @@ display: flex;
     padding-top: 94px;
     padding-bottom: 94px;
 }
-
+.cards-list{ 
+    --item: 6;
+}
 .client-link {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 170px;
     height: 92px;
+    color: #AFB1B8;
     border: 1px solid #afb1b8;
     border-radius: 4px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -442,6 +443,7 @@ display: flex;
     align-items: center;
     width: 44px;
     height: 44px;
+    color: #FFFFFF;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -488,6 +490,10 @@ display: flex;
   .filter-btn.current {
     color: #FFFFFF;
     background-color: #2196F3;
+ }
+
+ .projects-list  {
+    --item: 3;
  }
 .project-item:hover,
 .project-item:focus {
